@@ -16,6 +16,7 @@ HH_Power_ConsumptionFILTERED$DateTime <- as.POSIXct(paste(HH_Power_ConsumptionFI
 #plot 
 png(filename = "plot3.png", width = 480, height = 480)
 par(mfrow = c(1,1))
+par(mar = c(4, 4, 4, 4))
 plot(HH_Power_ConsumptionFILTERED$DateTime,HH_Power_ConsumptionFILTERED$Sub_metering_1, type = "l", col = "green", xlab = "", ylab = "Energy sub metering")
 lines(HH_Power_ConsumptionFILTERED$DateTime,HH_Power_ConsumptionFILTERED$Sub_metering_2, type = "l", col = "red")
 lines(HH_Power_ConsumptionFILTERED$DateTime,HH_Power_ConsumptionFILTERED$Sub_metering_3, type = "l", col = "blue")
